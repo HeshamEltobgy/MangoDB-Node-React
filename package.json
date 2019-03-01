@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/HeshamEltobgy/MangoDB-Node-React/issues"
   },
-  "homepage": "https://github.com/HeshamEltobgy/MangoDB-Node-React#readme"
+  "homepage": "https://github.com/HeshamEltobgy/MangoDB-Node-React#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mangodb": "^1.0.0"
+  }
 }
