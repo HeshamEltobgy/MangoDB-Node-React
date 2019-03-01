@@ -1,0 +1,24 @@
+{
+  "name": "mangodb-node-react",
+  "version": "1.0.0",
+  "description": "full stack mangodb, node and react project ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HeshamEltobgy/MangoDB-Node-React.git"
+  },
+  "keywords": [
+    "mangodb",
+    "node",
+    "react"
+  ],
+  "author": "Hesham Eltobgy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HeshamEltobgy/MangoDB-Node-React/issues"
+  },
+  "homepage": "https://github.com/HeshamEltobgy/MangoDB-Node-React#readme"
+}
