@@ -23,6 +23,8 @@
   "homepage": "https://github.com/HeshamEltobgy/MangoDB-Node-React#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "mangodb": "^1.0.0"
+    "mangodb": "^1.0.0",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
   }
 }
