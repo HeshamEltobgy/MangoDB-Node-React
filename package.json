@@ -1,7 +1,7 @@
 {
-  "name": "mangodb-node-react",
+  "name": "mongodb-node-react",
   "version": "1.0.0",
-  "description": "full stack mangodb, node and react project ",
+  "description": "full stack mongodb, node and react project ",
   "main": "index.js",
   "scripts": {
     "start": "nodemon --exec babel-node server.js --ignore public/",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/HeshamEltobgy/MangoDB-Node-React.git"
   },
   "keywords": [
-    "mangodb",
+    "mongodb",
     "node",
     "react"
   ],
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/HeshamEltobgy/MangoDB-Node-React#readme",
   "dependencies": {
+    "ejs": "^2.6.1",
     "express": "^4.16.4",
     "mongodb": "^3.1.13",
     "prop-types": "^15.7.2",
