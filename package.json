@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HeshamEltobgy/MangoDB-Node-React.git"
+    "url": "git+https://github.com/HeshamEltobgy/MongoDB-Node-React.git"
   },
   "keywords": [
     "mongodb",
@@ -19,9 +19,9 @@
   "author": "Hesham Eltobgy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/HeshamEltobgy/MangoDB-Node-React/issues"
+    "url": "https://github.com/HeshamEltobgy/MongoDB-Node-React/issues"
   },
-  "homepage": "https://github.com/HeshamEltobgy/MangoDB-Node-React#readme",
+  "homepage": "https://github.com/HeshamEltobgy/MongoDB-Node-React#readme",
   "dependencies": {
     "ejs": "^2.6.1",
     "express": "^4.16.4",
