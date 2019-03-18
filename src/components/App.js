@@ -24,7 +24,7 @@ class App extends React.Component {
   //   }
   // }
   state = {
-    pageHeader: "Naming Contests"
+    pageHeader: "Full-Stack React & MongoDB"
   }
   // componentDidMount() {
   //   console.log('did Mount')
@@ -38,7 +38,7 @@ class App extends React.Component {
 
   }
   componentWillUnmount() {
-    
+
   }
   render() {
     return (
