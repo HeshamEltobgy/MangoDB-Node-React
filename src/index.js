@@ -1,13 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types'
+import Header from "./components/Header"
 
-const Header = ({message}) => {
-  return (
-    <h2 className="Header text-center">
-      {message}
-    </h2>
-  )
-}
 
 
 const App = () => {
@@ -27,7 +22,3 @@ ReactDOM.render(
 <App />,
   document.getElementById('root')
 );
-
-Header.propTypes = {
-  message: React.PropTypes.string.isRequired
-}
