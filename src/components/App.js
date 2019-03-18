@@ -26,6 +26,20 @@ class App extends React.Component {
   state = {
     pageHeader: "Naming Contests"
   }
+  // componentDidMount() {
+  //   console.log('did Mount')
+  //   debugger
+  // }
+  // componentWillUnmount() {
+  //   console.log('will Unmount')
+  //   debugger
+  // }
+  componentDidMount() {
+
+  }
+  componentWillUnmount() {
+    
+  }
   render() {
     return (
       <div className="App">
