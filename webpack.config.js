@@ -14,7 +14,8 @@ module.exports = {
           exclude: /node_modules/,
           use: {
             loader: "json-loader",
-          }
+          },
+          include: '/src/testData.json'
         },
         {
           test: /\.js$/,
