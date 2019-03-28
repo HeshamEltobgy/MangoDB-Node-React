@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 import Header from "./Header"
 import ContestPreview from './ContestPreview'
-
+import data  from '../testData.json';
 
 
 // const App = () => {
@@ -25,7 +25,8 @@ class App extends React.Component {
   //   }
   // }
   state = {
-    pageHeader: "Full-Stack React & MongoDB"
+    pageHeader: "Full-Stack React & MongoDB",
+    contests: []
   }
   // componentDidMount() {
   //   console.log('did Mount')
@@ -36,7 +37,9 @@ class App extends React.Component {
   //   debugger
   // }
   componentDidMount() {
-
+    this.setState({
+      contests: data.contests
+    })
   }
   componentWillUnmount() {
 
@@ -46,7 +49,7 @@ class App extends React.Component {
       <div className="App">
          <Header message={this.state.pageHeader} />
          <div>
-            {this.props.contests.map(contest =>
+            {this.state.contests.map(contest =>
                 <ContestPreview key={contest.id} {...contest} />
             )}
 
