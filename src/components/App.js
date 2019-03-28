@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import Header from "./Header"
 import ContestPreview from './ContestPreview'
 // import data  from '../testData.json';
-
+import axios from 'axios';
 
 // const App = () => {
 //   return (
@@ -37,9 +37,13 @@ class App extends React.Component {
   //   debugger
   // }
   componentDidMount() {
-    this.setState({
-      contests: data.contests
-    })
+    axios.get('/api/contests')
+      .then(resp => {
+        this.setState({
+          contests: resp.data.contests
+        })
+      })
+
   }
   componentWillUnmount() {
 
