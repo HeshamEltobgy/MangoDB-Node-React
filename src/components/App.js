@@ -1,7 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 import Header from "./Header"
+import ContestPreview from './ContestPreview'
 
 
 
@@ -45,6 +46,9 @@ class App extends React.Component {
       <div className="App">
          <Header message={this.state.pageHeader} />
          <div>
+            {this.props.contests.map(contest =>
+                <ContestPreview {...contest} />
+            )}
 
          </div>
       </div>
