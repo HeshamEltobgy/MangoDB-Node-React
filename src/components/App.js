@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 import Header from "./Header"
 import ContestPreview from './ContestPreview'
-import data  from '../testData.json';
+// import data  from '../testData.json';
 
 
 // const App = () => {
