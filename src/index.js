@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import axios from 'axios';
 
 // import data  from './testData.json';
 
@@ -7,12 +8,14 @@ import ReactDOM from 'react-dom';
 import App from './components/App'
 
 
-ReactDOM.render(
+    ReactDOM.hydrate(
+    // <App contests = {[]} />,
+    <App initialContests={window.initialData.contests} />,
+      document.getElementById('root')
+    );
 
 
-<App contests = {[]} />,
-  document.getElementById('root')
-);
+
 
 // setTimeout(() => {
 //   ReactDOM.render(

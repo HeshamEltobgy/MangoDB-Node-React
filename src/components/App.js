@@ -4,7 +4,6 @@ import PropTypes from 'prop-types'
 import Header from "./Header"
 import ContestPreview from './ContestPreview'
 // import data  from '../testData.json';
-import axios from 'axios';
 
 // const App = () => {
 //   return (
@@ -26,7 +25,8 @@ class App extends React.Component {
   // }
   state = {
     pageHeader: "Full-Stack React & MongoDB",
-    contests: []
+    // contests: []
+    contests: this.props.initialContests
   }
   // componentDidMount() {
   //   console.log('did Mount')
@@ -36,15 +36,15 @@ class App extends React.Component {
   //   console.log('will Unmount')
   //   debugger
   // }
-  componentDidMount() {
-    axios.get('/api/contests')
-      .then(resp => {
-        this.setState({
-          contests: resp.data.contests
-        })
-      })
-
-  }
+  // componentDidMount() {
+  //   axios.get('/api/contests')
+  //     .then(resp => {
+  //       this.setState({
+  //         contests: resp.data.contests
+  //       })
+  //     })
+  //     .catch(console.error);
+  // }
   componentWillUnmount() {
 
   }
