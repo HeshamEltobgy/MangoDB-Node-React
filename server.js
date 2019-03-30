@@ -39,6 +39,8 @@ server.use(sassMiddleware({
 
 server.set('view engine', 'ejs');
 
+import './serverRender';
+
 server.get('/', (req, res)=> {
   res.render('index', {
     content: 'Hello Express and EJS'
@@ -53,6 +55,6 @@ server.use(express.static('public'));
 //   });
 // });
 
-server.listen(config.port, () =>{
+server.listen(config.port,config.host, () =>{
   console.info('Express listening on port', config.port);
 });
