@@ -1,9 +1,10 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import PropTypes from 'prop-types'
-import Header from "./Header"
-import ContestList from './ContestList'
-import Contest from './Contest'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
+import Header from "./Header";
+import ContestList from './ContestList';
+import Contest from './Contest';
+import * as api from '../api';
 // import data  from '../testData.json';
 
 // const App = () => {
@@ -58,10 +59,18 @@ class App extends React.Component {
       {currentContestId: contestId},
       `/contest/${contestId}`
     )
-    this.setState ({
-      pageHeader: this.state.contests[contestId].contestName,
-      currentContestId: contestId
+    api.fetchContest(contestId).then(contest => {
+      this.setState ({
+        pageHeader: contest.contestName,
+        currentContestId: contest.id,
+        contests: {
+          ...this.state.contests,
+          [contest.id]: contest
+
+        }
+      })
     })
+
   }
   currentContent() {
     if(this.state.currentContestId) {
