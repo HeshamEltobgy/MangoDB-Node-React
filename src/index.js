@@ -10,7 +10,7 @@ import App from './components/App'
 
     ReactDOM.hydrate(
     // <App contests = {[]} />,
-    <App initialContests={window.initialData.contests} />,
+    <App initialData={window.initialData} />,
       document.getElementById('root')
     );
 
