@@ -2,23 +2,27 @@
   "contests": [
     {
       "id": 1,
-      "categoryName": "Business/Company",
-      "contestName": "Cognitive Building Bricks"
+      "categoryName": "Webpack",
+      "contestName": "Open-source JavaScript module bundler",
+      "description": "Webpack is an open-source JavaScript module bundler. Its main purpose is to bundle JavaScript files for usage in a browser, yet it is also capable of transforming, bundling, or packaging just about any resource or asset. Webpack takes modules with dependencies and generates static assets representing those modules."
     },
     {
       "id": 2,
-      "categoryName": "Magazine/Newsletter",
-      "contestName": "Educating people about sustainable food production"
+      "categoryName": "React",
+      "contestName": "JavaScript library for building user interfaces",
+      "description": "React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications."
     },
     {
       "id": 3,
-      "categoryName": "Software Component",
-      "contestName": "Big Data Analytics for Cash Circulation"
+      "categoryName": "Node.js",
+      "contestName": "Open source, cross-platform built on Chrome's JavaScript runtime for fast and scalable server-side and networking applications",
+      "description": "Node.js is an open-source, cross-platform JavaScript run-time environment that executes JavaScript code outside of a browser. JavaScript is used primarily for client-side scripting, in which scripts written in JavaScript are embedded in a webpage's HTML and run client-side by a JavaScript engine in the user's web browser. Node.js lets developers use JavaScript to write command line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user's web browser."
     },
     {
       "id": 4,
-      "categoryName": "Website",
-      "contestName": "Free programming books"
+      "categoryName": "MongoDB",
+      "contestName": "cross-platform document-oriented database program",
+      "description": "MongoDB is a cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schemata. MongoDB is developed by MongoDB Inc. and licensed under the Server Side Public License."
     }
   ]
 }
