@@ -7,7 +7,7 @@
     "start": "nodemon --exec babel-node server.js --ignore public/",
     "dev": "webpack -wd",
     "build": "NODE_ENV=production && webpack -p",
-    "deploy": "npm run build && git push -u origin master && git subtree push --prefix views origin gh-pages"
+    "deploy": "npm run build && git push -u origin master"
   },
   "repository": {
     "type": "git",
