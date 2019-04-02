@@ -11,7 +11,7 @@ class Contest extends Component {
         </div>
         <div className="home-link link"
         onClick={this.props.contestLinkClick}>
-          Return Home
+          <p>Return Home</p>
         </div>
       </div>
     )

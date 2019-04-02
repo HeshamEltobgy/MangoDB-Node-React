@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --exec babel-node server.js --ignore public/",
-    "dev": "webpack -wd"
+    "dev": "webpack -wd",
+    "build": "webpack -p",
+    "deploy": "npm run build && git push -u origin master && git subtree push --prefix public origin gh-pages"
   },
   "repository": {
     "type": "git",
@@ -47,6 +49,6 @@
     "eslint-plugin-react": "^7.12.4",
     "nodemon": "^1.18.10",
     "webpack": "^4.29.6",
-    "webpack-cli": "^3.2.3"
+    "webpack-cli": "^3.3.0"
   }
 }

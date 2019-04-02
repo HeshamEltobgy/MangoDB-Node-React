@@ -17,13 +17,27 @@
   .ContestPreview .contest-name, .ContestPreview .type {
     padding: 0.5em; }
 
+.ContestPreview:hover {
+  transform: scale(1.2);
+  transition: all .5s; }
+
 .link {
   cursor: pointer; }
 
 .home-link {
   margin-top: 1em;
-  color: #0000ee;
+  color: #eee;
   text-align: center; }
+  .home-link p {
+    font-size: 14px;
+    border: 1px solid #000;
+    width: 19%;
+    margin: auto;
+    padding: 4px;
+    border-radius: 14px;
+    background-color: #000; }
+  .home-link p:hover {
+    opacity: 0.7; }
 
 .Contest {
   width: 50%;
