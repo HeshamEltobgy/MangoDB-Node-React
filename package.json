@@ -8,7 +8,7 @@
     "dev": "webpack -wd",
     "build": "webpack -p",
     "deploy": "npm run build && git push -u origin master",
-    "deploy-gh-pages": "git push origin :gh-pages"
+    "deploy-gh-pages": "git push origin gh-pages"
   },
   "repository": {
     "type": "git",
