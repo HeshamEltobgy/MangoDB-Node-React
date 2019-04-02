@@ -1,11 +1,12 @@
-import React from 'react';
+  import React from 'react';
 import ContestPreview from './ContestPreview';
 import PropTypes from 'prop-types';
 
 
 const ContestList = ({contests, onContestClick}) => {
   return (
-    <div>
+    <div className='content-container'>
+    <h4>Main Technologies</h4>
        {Object.keys(contests).map(contestId =>
            <ContestPreview
            key={contestId}
